@@ -283,6 +283,18 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-streaming {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: var(--bg-primary);
+    box-shadow: 0 4px 20px rgba(79, 172, 254, 0.3);
+    border: none;
+}
+
+.btn-streaming:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(79, 172, 254, 0.4);
+}
+
 /* Sections */
 .section-header {
     text-align: center;
@@ -325,10 +337,21 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.mission-card.highlighted {
+    background: rgba(79, 172, 254, 0.1);
+    border: 2px solid rgba(79, 172, 254, 0.5);
+    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2);
+}
+
 .mission-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-cyan);
     box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+}
+
+.mission-card.highlighted:hover {
+    border-color: rgba(79, 172, 254, 0.8);
+    box-shadow: 0 20px 40px rgba(79, 172, 254, 0.3);
 }
 
 .card-icon {
@@ -347,6 +370,22 @@ body {
 .mission-card p {
     color: var(--text-secondary);
     line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.card-link:hover {
+    color: #00f2fe;
+    transform: translateX(5px);
 }
 
 /* Tokenomics Section */
@@ -551,7 +590,8 @@ body {
 }
 
 .timeline-item.active .timeline-marker {
-    background: var(--accent-cyan);
+    background: #4facfe;
+    border-color: #4facfe;
     animation: pulse 2s infinite;
 }
 
@@ -582,6 +622,22 @@ body {
     border-radius: 20px;
     font-size: 0.8rem;
     color: var(--primary-cyan);
+    margin-bottom: 1rem;
+}
+
+.timeline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.timeline-link:hover {
+    color: #00f2fe;
+    transform: translateX(5px);
 }
 
 /* Footer */
